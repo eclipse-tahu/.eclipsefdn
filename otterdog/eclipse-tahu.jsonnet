@@ -5,7 +5,6 @@ orgs.newOrg('eclipse-tahu') {
     description: "",
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
-      default_workflow_permissions: "write",
     },
   },
   _repositories+:: [
@@ -25,8 +24,6 @@ orgs.newOrg('eclipse-tahu') {
       dependabot_security_updates_enabled: true,
       description: "Eclipse Tahu addresses the existence of legacy SCADA/DCS/ICS protocols and infrastructures and provides a much-needed definition of how best to apply MQTT into these existing industrial operational environments.",
       homepage: "https://eclipse.org/tahu",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "iiot",
         "iot",
@@ -35,10 +32,6 @@ orgs.newOrg('eclipse-tahu') {
         "sparkplug",
         "sparkplug-specification"
       ],
-      web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
     },
   ],
 }
