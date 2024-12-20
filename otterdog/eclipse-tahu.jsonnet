@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-tahu') {
+orgs.newOrg('iot.tahu', 'eclipse-tahu') {
   settings+: {
     description: "",
     workflows+: {
